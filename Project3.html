@@ -1,0 +1,117 @@
+<html>
+    <head>
+<link rel="stylesheet" href="Project3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 id="main-header">THE CODE REVIEW</h1>
+<h2 id="form-info">Sign up for our newsletter</h2>
+<p id="main-info-paragraph">Get the latest new on how your code is doing right in your inbox</p>
+<hr>
+<form action="">
+<fieldset id="contactInformation">
+    <legend>Contact Information</legend>
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required placeholder="*Required">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="*Required">
+    <label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>  <!-- I put required so the pattern would work -->
+<label for="city">City</label>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
+</head>
+  <input type="text" name="city" id="city"/>
+  <script>
+    var input = document.getElementById('city');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  </script>
+<label for="state">State</label>
+<link rel="stylesheet" href="style.css">
+<select id="state">
+    <option value="hide">Chose State</option>
+    <option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="index.js"></script>
+<label for="zipCode">Zip Code</label>
+	<input type="number" pattern="[0-9]{6}" id="zipCode" name="zipCode"onkeydown="limit(this, 6);" onkeyup="limit(this, 6);" onkeyup="this.value = minmax(this.value, 0, 6)" required>
+<hr class="smallHr">
+<script>
+function limit(element, max_chars)
+	{
+		if(element.value.length > max_chars) {
+			element.value = element.value.substr(0, max_chars);
+		}
+	}
+	function minmax(value, min, max) 
+	{
+		if(parseInt(value) < min || isNaN(parseInt(value))) 
+			return 0; 
+		else if(parseInt(value) > max) 
+			return 100; 
+		else return value;
+	}</script>
+</fieldset>
+
+
+<fieldset id="newsPaper">
+	<legend>Newsletter</legend>
+	<label for="newsLetters">Select the newsletters you would like to recive</label>
+
+	<label for="htmlNews">HTML News</label>
+	
+</fieldset>
+
+</form>
+    </body>
+</html>
