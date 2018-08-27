@@ -140,7 +140,7 @@ fieldset {
 }
 label {
     margin-left: 5%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 120%;
 }
 legend {
@@ -167,5 +167,7 @@ margin-top: 30px;
 .radio::after {
     border-radius: 50%;
 }
-
-
+textarea {
+    resize: none;
+    margin-top: 0;
+  }
