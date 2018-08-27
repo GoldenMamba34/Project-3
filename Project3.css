@@ -215,4 +215,15 @@ textarea {
       border-radius: 10px;
       font-size: 200%;
       color:white;
+      outline: none;
+  }
+  #copyright {
+      font-size: 150%;
+      color:rgb(116, 116, 116);
+      margin-top: 40px;
+      margin-bottom: 100px;
+display: block;
+text-align: center;
+      /* margin-left: 5%;
+      margin-right: 5%; */
   }
