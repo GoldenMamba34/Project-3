@@ -237,12 +237,16 @@ text-align: center;
     }
     #newsPaperTitle, #newsLetterFormat, #otherTopicLabel {
         margin-left:25%;
+
     }
     #submit,textarea {
         width: 50%;
         margin-left:25%;
     
     }
-    
+    input[type="email"], input[type="text"], input[type="tel"], input[type="number"] {
+        width: 50%;
+        margin: 0;
+    }
 
 }
