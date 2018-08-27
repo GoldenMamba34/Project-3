@@ -153,7 +153,7 @@ margin-bottom: 30px;
     height: 5px;
     margin-top: 15px;
 }
-#newsPaperTitle, #newsLetterFormat {
+#newsPaperTitle, #newsLetterFormat,#otherTopicLabel {
     font-size: 175%;
     display: inline-block;
 margin-right: 5%;
@@ -167,4 +167,5 @@ margin-top: 30px;
 .radio::after {
     border-radius: 50%;
 }
+
 
