@@ -164,7 +164,7 @@ margin-top: 30px;
 .form label {
     margin-left: 0;
 }
-
-.form input[type="radio"] {
-    border-radius: 0;
+.radio::after {
+    border-radius: 50%;
 }
+
