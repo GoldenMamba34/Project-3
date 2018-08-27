@@ -116,3 +116,7 @@ p a:hover {
 .select-options li[rel="hide"] {
   display: none;
 }
+
+input[type="checkbox"] {
+
+}
