@@ -118,8 +118,8 @@ p a:hover {
 }
 @media (min-width:768px) {
   .select {
-    width:50%;
-
+    width: 50%;
+    margin-left: 30px;
   }
 }
 

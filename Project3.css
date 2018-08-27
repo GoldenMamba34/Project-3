@@ -224,29 +224,43 @@ text-align: center;
 
 @media (min-width:768px) {
 
+
+    body {
+        width:60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+/* 
     hr {
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
     }
-    legend,label{
-        margin-left:25%;
+    */
+
+    label  {
+        display: inline-block;
+        width: 20%;
+        text-align: left;
+    }
+  /* legend,label{
+
     } 
     .form label {
-        margin-left: 25%;
+        margin-left: calc(20vw - 30px);
     }
     #newsPaperTitle, #newsLetterFormat, #otherTopicLabel {
-        margin-left:25%;
-
+        margin-left:20%;
     }
     #submit,textarea {
         width: 50%;
-        margin-left:25%;
+        margin-left:20%;
     
-    }
-    input[type="email"], input[type="text"], input[type="tel"], input[type="number"] {
+    } */
+ input[type="email"], input[type="text"], input[type="tel"], input[type="number"] {
         width: 50%;
-        margin: 0;
-    }
+margin-left: 30px;
+
+    }  
 
 }
