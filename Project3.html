@@ -108,7 +108,7 @@ else return value;
 <fieldset id="newsPaper">
 <legend>Newsletter</legend>
 <link rel="stylesheet" href="CheckBoxStyle.css">
-<label id="newsPaperTitle"for="newsLetters">Select the newsletters you would like to recive</label>
+<label id="newsPaperTitle">Select the newsletters you would like to recive</label>
 
 <link rel="stylesheet" href="CheckBox.css">
 <div class="form">
@@ -127,8 +127,19 @@ else return value;
 <input id="javascriptNews" name="javascriptNews" type="checkbox"/>
 <label for="javascriptNews">Javascript News</label>
 </div>
-</div>
 
+</div>
+<label id="newsLetterFormat">Newsletter Format</label>
+<div class="form">
+<div class="inputGroup">
+<input id="html" name="format" type="radio"/>
+<label for="html">HTML</label>
+</div>
+<div class="inputGroup">
+<input id="plainText" name="format" type="radio"/>
+<label for="plainText">Plain Text</label>
+</div>
+</div>
 </fieldset>
 
 </form>

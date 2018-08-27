@@ -93,7 +93,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="number"]
     height: 50px;
     border: none;
     border-radius: 6px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(197, 197, 197);
 margin-left: 5%;
 margin-right: 5%;
 margin-top: 20px;
@@ -153,14 +153,18 @@ margin-bottom: 30px;
     height: 5px;
     margin-top: 15px;
 }
-#newsPaperTitle {
-    font-size: 150%;
+#newsPaperTitle, #newsLetterFormat {
+    font-size: 175%;
     display: inline-block;
 margin-right: 5%;
 margin-left: 5%;
+margin-top: 30px;
 }
 
 .form label {
     margin-left: 0;
 }
 
+.form input[type="radio"] {
+    border-radius: 0;
+}
