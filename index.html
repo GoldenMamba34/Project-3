@@ -26,9 +26,9 @@
 var input = document.getElementById('city');
 var autocomplete = new google.maps.places.Autocomplete(input);
 </script>
-<label for="state">State</label>
+<label for="state" id="stateSelect">State</label>
 <link rel="stylesheet" href="style.css">
-<select id="state">
+<select id="state" name="state">
 <option value="hide">Chose State</option>
 <option value="AL">Alabama</option>
 <option value="AK">Alaska</option>
@@ -147,7 +147,7 @@ else return value;
 </fieldset>
 
 
-  <button type="submit">Sign Up</button>
+  <button type="submit" id="submit">Sign Up</button>
 
 <p id="copyright">&copy Copyright The Code Review</p>
 

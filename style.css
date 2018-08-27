@@ -116,7 +116,10 @@ p a:hover {
 .select-options li[rel="hide"] {
   display: none;
 }
+@media (min-width:768px) {
+  .select {
+    width:50%;
 
-input[type="checkbox"] {
-
+  }
 }
+

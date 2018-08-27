@@ -10,7 +10,6 @@
     line-height: 100px;
     text-align: center;
     font-size:150%;
-
 }
 #form-info {
     text-align: center;
@@ -149,7 +148,6 @@ legend {
     margin-left: 5%;
 margin-bottom: 30px;
 }
-
 .smallHr {
     height: 5px;
     margin-top: 15px;
@@ -161,7 +159,6 @@ margin-right: 5%;
 margin-left: 5%;
 margin-top: 30px;
 }
-
 .form label {
     margin-left: 0;
 }
@@ -179,9 +176,7 @@ textarea {
     padding: 15px;
     border:none;
     border-radius: 10px;
-
   }
-
   textarea:focus {
     vertical-align: top;
     border: none;
@@ -204,7 +199,6 @@ textarea {
     background-size: 300% 9px, 9px 300%;
     animation: bd 20s infinite linear;
   }
-
   button[type="submit"] {
       width: 90%;
       margin-left: 5%;
@@ -224,6 +218,31 @@ textarea {
       margin-bottom: 100px;
 display: block;
 text-align: center;
-      /* margin-left: 5%;
-      margin-right: 5%; */
   }
+
+/* Larger screen sizes */
+
+@media (min-width:768px) {
+
+    hr {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    legend,label{
+        margin-left:25%;
+    } 
+    .form label {
+        margin-left: 25%;
+    }
+    #newsPaperTitle, #newsLetterFormat, #otherTopicLabel {
+        margin-left:25%;
+    }
+    #submit,textarea {
+        width: 50%;
+        margin-left:25%;
+    
+    }
+    
+
+}
